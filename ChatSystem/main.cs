@@ -139,27 +139,27 @@ namespace ChatSystem
                     Console.Write("送るメッセージ：");
                     if (connectMode == ChatSystem.ConnectMode.host)
                     {
-                        if (replay.Contains("こんにちは") || replay.Contains("やっほー") || replay.Contains("Hello") == true)
+                        if (received.Contains("こんにちは") || received.Contains("やっほー") || received.Contains("Hello") == true)
                         {
                             inputSt = ("おはよ！");
                             Console.WriteLine(inputSt);
                         }
-                        else if (replay.Contains("おやすみ") || replay.Contains("おやすみなさい") || replay.Contains("Good Night") == true)
+                        else if (received.Contains("おやすみ") || received.Contains("おやすみなさい") || received.Contains("Good Night") == true)
                         {
                             inputSt = ("おやすみ！良い夢見てね～");
                             Console.WriteLine(inputSt);
                         }
-                        else if (replay.Contains("今何してる？") || replay.Contains("今何してた？") || replay.Contains("What aer you doing now?") == true)
+                        else if (received.Contains("今何してる？") || received.Contains("今何してた？") || received.Contains("What aer you doing now?") == true)
                         {
                             inputSt = ("ご飯食べてたよ");
                             Console.WriteLine(inputSt);
                         }
-                        else if (replay.Contains("課題終わった？") || replay.Contains("課題終わってる？") || replay.Contains("Have you finished the task?") == true)
+                        else if (received.Contains("課題終わった？") || received.Contains("課題終わってる？") || received.Contains("Have you finished the task?") == true)
                         {
                             inputSt = ("もちろん終わってないよ");
                             Console.WriteLine(inputSt);
                         }
-                        else if(replay.Contains("好き")||replay.Contains("好きだよ")||replay.Contains("I love you") == true)
+                        else if(received.Contains("好き")||received.Contains("好きだよ")||received.Contains("I love you") == true)
                         {
                             inputSt = ("私はきら～い");
                             Console.WriteLine(inputSt);
@@ -346,7 +346,7 @@ namespace ChatSystem
                 }
                 else
                 {
-                    Console.ReadLine();
+                    select = Console.ReadLine();
                 }
 
                 if (select == "0")
